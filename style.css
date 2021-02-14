@@ -1,0 +1,40 @@
+html,
+body {
+	height: 100vh;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-wrapper {
+	flex: 1;
+	margin-bottom: 20px;
+}
+
+.footer-wraper {
+	flex-shrink: 0;
+}
+
+.navbar-wrapper {
+	margin-bottom: 2rem;
+}
+
+.footer-container {
+	display: flex;
+	color: white;
+}
+
+.phone-number {
+	font: bold 26px/28px "Elektra", Arial, sans-serif;
+	border-bottom: 1px dashed;
+}
+
+.selected-image {
+	box-shadow: 0 0 5px blue;
+}
+
+.bordered {
+	box-shadow: 0 0 10px red;
+}

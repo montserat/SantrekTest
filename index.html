@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Сан-Трек</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+   </head>
+   <body>
+      <div class="container-fluid navbar-wrapper navbar bg-dark navbar-dark">
+         <div class="header-logo">
+            <a class="navbar-brand text-uppercase" href="#">
+            <img class="d-inline-block" src="images/logo.png" alt="Сан-Трек лого" height="30" width="30" />
+            сантрек
+            </a>
+         </div>
+         <div class="nav-item">
+            <a class="btn btn-outline-primary" href="#">Войти</a>
+         </div>
+      </div>
+      <div class="container main-wrapper">
+         <div class="row">
+            <div class="col">
+               <div class="row border border-dark">меню</div>
+               <div id="checkboxArea" class="row border border-dark text-center">
+                  <div class="col-auto m-auto">
+                     <ul id="checkboxList" class="list-group py-3 m-auto">
+                        <li class="list-group-item">
+                           <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" name="checkBox1" value="checkBox1" id="checkBox1" />
+                              <label class="custom-control-label" for="checkBox1">Checkbox1</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" name="checkBox2" value="checkBox2" id="checkBox2" />
+                              <label class="custom-control-label" for="checkBox2">Checkbox2</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" name="checkBox3" value="checkBox3" id="checkBox3" />
+                              <label class="custom-control-label" for="checkBox3">Checkbox3</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" name="checkBox4" value="checkBox4" id="checkBox4" />
+                              <label class="custom-control-label" for="checkBox4">Checkbox4</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" name="checkBox5" value="checkBox5" id="checkBox5" />
+                              <label class="custom-control-label" for="checkBox5">Checkbox5</label>
+                           </div>
+                        </li>
+                        <li class="list-unstyled">
+                           <button class="btn btn-outline-dark mt-2" id="checkboxButton">Применить</button>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="radioArea" class="row border border-dark text-center">
+                  <div class="col-auto m-auto">
+                     <ul id="radioList" class="list-group py-3 m-auto">
+                        <li class="list-group-item">
+                           <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="radiobtn" id="radio1" value="radio1" />
+                              <label class="custom-control-label" for="radio1">radio1</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="radiobtn" id="radio2" value="radio2"/>
+                              <label class="custom-control-label" for="radio2">radio2</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="radiobtn" id="radio3" value="radio3"/>
+                              <label class="custom-control-label" for="radio3">radio3</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="radiobtn" id="radio4" value="radio4"/>
+                              <label class="custom-control-label" for="radio4">radio4</label>
+                           </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" name="radiobtn" id="radio5" value="radio5"/>
+                              <label class="custom-control-label" for="radio5">radio5</label>
+                           </div>
+                        </li>
+                        <li class="list-unstyled">
+                           <div>
+                              <button class="btn btn-outline-dark mt-2" id="radioButton">Применить</button>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="col-6 border border-dark content-wrapper text-center" id="mainArea">
+               <form id="inputForm">
+                  <!-- <div class="input-group p-3">
+                     <input name="input1"  type="text" class="form-control" />
+                     <div class="input-group-append">
+                       <button class="btn btn-outline-primary">Применить</button>
+                     </div>
+                     </div>
+                     <div class="input-group p-3">
+                     <input name="input2" type="text" class="form-control" />
+                     <div class="input-group-append">
+                       <button class="btn btn-outline-primary">Применить</button>
+                     </div>
+                     </div>
+                     <div class="input-group p-3">
+                     <input name="input3" type="text" class="form-control" />
+                     <div class="input-group-append">
+                       <button class="btn btn-outline-primary">Применить</button>
+                     </div>
+                     </div>
+                     <div class="input-group p-3">
+                     <input name="input4" type="text" class="form-control" />
+                     <div class="input-group-append">
+                       <button class="btn btn-outline-primary">Применить</button>
+                     </div>
+                     </div>
+                     <div class="input-group p-3">
+                     <input name="input5" type="text" class="form-control" />
+                     <div class="input-group-append">
+                       <button id="resultButton" class="btn btn-outline-primary">
+                         Получить результат
+                       </button>
+                     </div>
+                     </div> -->
+               </form>
+            </div>
+            <div class="col">
+               <div id="imageArea" class="row border text-center border-dark">
+                  <div class="col-12 m-auto">
+                     <div id="imageList" class="col justify-content-center">
+                        <div class=" p-1">
+                           <img class="img-fluid" alt="Ванная продукт" src="images/1.png" width="50" height="50" />
+                        </div>
+                        <div class=" p-1">
+                           <img class="img-fluid" alt="Ванная продукт" src="images/1.png" width="50" height="50" />
+                        </div>
+                        <div class=" p-1">
+                           <img class="img-fluid" alt="Ванная продукт" src="images/1.png" width="50" height="50" />
+                        </div>
+                        <div class=" p-1">
+                           <img class="img-fluid" alt="Ванная продукт" src="images/1.png" width="50" height="50" />
+                        </div>
+                        <div class=" p-1">
+                           <img class="img-fluid" alt="Ванная продукт" src="images/1.png" width="50" height="50" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="block4Area" class="row border border-dark text-center">
+                  <div class="col-auto m-auto"> Блок 4</div>
+               </div>
+               <div id="block5Area" class="row border border-dark text-center">
+                  <div class="col-auto m-auto"> Блок 5</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer-wraper bg-dark pt-4 border-top">
+         <div class="container footer-container">
+            <div class="col">
+               <h5>Инфо 1</h5>
+               <ul class="list-unstyled">
+                  <li><a class="text-muted" href="#'">Инфо текст</a></li>
+                  <li><a class="text-muted" href="#'">Инфо текст</a></li>
+                  <li><a class="text-muted" href="#'">Инфо текст</a></li>
+                  <li><a class="text-muted" href="#'">Инфо текст</a></li>
+               </ul>
+            </div>
+            <div class="col">
+               <h5>Инфо 2</h5>
+               <ul class="list-unstyled">
+                  <li>Инфо текст</li>
+                  <li>Инфо текст</li>
+                  <li>Инфо текст</li>
+                  <li>Инфо текст</li>
+               </ul>
+            </div>
+            <div class="col">
+               <h5>Инфо 3</h5>
+               <ul class="list-unstyled">
+                  <li>Инфо текст</li>
+                  <li>Инфо текст</li>
+                  <li>Инфо текст</li>
+                  <li>Инфо текст</li>
+               </ul>
+            </div>
+            <div class="col">
+               <h5>Контакты</h5>
+               <div class="contacts-wrapper">
+                  <div class="contacts-text">
+                     <span class="phone-text">Доставка по РФ - доб.602 / ТЦ в Пензе - доб.496</span>
+                  </div>
+                  <div class="contacts-number">
+                     <span class="phone-number">8 (800) 234-58-56</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="scripts.js"></script>
+   </body>
+</html>
