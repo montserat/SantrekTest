@@ -53,30 +53,6 @@ function generateAllResultsBlock() {
   );
 }
 
-function generateAddRemoveButtons() {
-  let newDiv = $("<div />", {
-    class: "row",
-  });
-
-  newDiv.append(
-    $("<button/>", {
-      text: "Добавить поле",
-      id: "addField",
-      class: "btn btn-outline-success m-auto",
-    })
-  );
-
-  newDiv.append(
-    $("<button/>", {
-      text: "Убрать поле",
-      id: "removeField",
-      class: "btn btn-outline-danger m-auto",
-    })
-  );
-
-  $("#mainArea").append(newDiv);
-}
-
 function generateFormField(inputName, btnId, btnText) {
   let fieldInfo = {
     wrapperDivClass: "input-group p-3",
@@ -109,6 +85,42 @@ function generateFormField(inputName, btnId, btnText) {
   buttonDiv.append(newButton);
   newWrapperDiv.append(newInput).append(buttonDiv);
   return newWrapperDiv;
+}
+
+function generateAddRemoveButtons() {
+  let newDiv = $("<div />", {
+    class: "row",
+  });
+
+  newDiv.append(
+    $("<button/>", {
+      text: "Добавить поле",
+      id: "addField",
+      class: "btn btn-outline-success m-auto",
+      click: function () {
+        let fields = $("#inputForm input").length;
+        $("#inputForm").append(
+          generateFormField(
+            `input${fields + 1}`,
+            `button${fields + 1}`,
+            "Применить"
+          )
+        );
+      },
+    })
+  );
+
+  newDiv.append(
+    $("<button/>", {
+      text: "Убрать поле",
+      id: "removeField",
+      class: "btn btn-outline-danger m-auto",
+      click: function (e) {
+        $("#inputForm div").last().parent().remove();
+      },
+    })
+  );
+  $("#mainArea").append(newDiv);
 }
 
 function renderResultArea(nodeId, nodeParent, resultText) {
@@ -145,27 +157,6 @@ $(document).ready(function () {
       ).text(resultText);
       $(textArea).insertBefore("#allResults");
     }
-  });
-});
-
-$(document).ready(function () {
-  $("#addField").click(function (e) {
-    e.preventDefault();
-    let fields = $("#inputForm input").length;
-    $("#inputForm").append(
-      generateFormField(
-        `input${fields + 1}`,
-        `button${fields + 1}`,
-        "Применить"
-      )
-    );
-  });
-});
-
-$(document).ready(function () {
-  $("#removeField").click(function (e) {
-    e.preventDefault();
-    $("#inputForm div").last().parent().remove();
   });
 });
 
