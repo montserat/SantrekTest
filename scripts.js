@@ -200,7 +200,7 @@ $(document).ready(function () {
   $("#createCheckboxes").click(function (e) {
     e.preventDefault();
     if ($("#checkboxList").length) {
-      $("#checkboxList").remove();
+      $("#checkboxList").parent().remove();
     }
     if ($("#checkboxResult").length) {
       $("#checkboxResult").remove();
@@ -263,7 +263,7 @@ function handleCheckboxButton() {
 $(document).ready(function () {
   $("#createRadio").click(function (e) {
     if ($("#radioList").length) {
-      $("#radioList").remove();
+      $("#radioList").parent().remove();
     }
     if ($("#radioResult").length) {
       $("#radioResult").remove();
@@ -322,7 +322,7 @@ $(document).ready(function () {
   $("#createImages").click(function (e) {
     e.preventDefault();
     if ($("#imageList").length) {
-      $("#imageList").remove();
+      $("#imageList").parent().remove();
     }
     if ($("#imageResult").length) {
       $("#imageResult").remove();
